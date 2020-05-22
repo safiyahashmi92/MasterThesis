@@ -3,6 +3,19 @@
 This project requires: 
 - Java 8.0, Apache Maven 3.6.0, one IDE (Eclipse, IntelliJ) 
 
+After importing the project run the MimicDataJob with the following parameters:
+
+    --input ./src/main/resources/a40834n.csv --orderMA 10 --output signal.csv
+A data example is included in resources, the program load three signals from the mimic wave file: ABPMean, PAPMean and PULSE and calcculate a moving average of orderMa for those signals.
+
+The output is saved in two files: 
+
+    input-signal.csv and movingAvg-signal.csv 
+ 
+The signals can be plot with the script in the directory R:
+
+     plot_mimic.R
+
 ## Useful links:
 
 ## Time series processing
