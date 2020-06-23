@@ -1,0 +1,56 @@
+For a subject_id / patient do the following:
+
+Extract ICU intime and outtime from clinical DB;
+
+list_of_numeric_recordings =  extract the names of the numeric recordings i.e.'___n' files for this subject_id from the waveform database.
+
+For each numeric recording in list_of_numeric_recordings:
+	Extract signal names recorded in it ;
+	Calculate the record start time and end time from the numeric recording;
+	
+	if all 6 required signals i.e.(HR , RESP, SPO2, ABP SYS, ABP DIAS, ABP MEAN) exists, then:
+		if record start and end time overlaps with ICU intime and outtime, then:
+			Consider this record;
+			
+			Extract all 6 signals data from the recording according to their indexes;
+			
+			If this is the first recording for that patient:
+					if recording starts sometime after the ICU intime, then:
+						insert nulls between the icu intime and recording starttime;
+						append the extracted 6 signals data to the main dataframe;
+					 
+					else:
+						insert the extracted 6 signals data to the main dataframe;
+				
+					if the sampling frequency is per second,then:
+						convert the data into per minute by taking average for per 60 seconds data;
+					else when the sampling frequency is per minute,then:
+						do nothing;
+				
+		
+			else (i.e. when this is not the first recording for that patient):
+					if there is some gap between 1st / previous recoding end time and the current recording startime, then:
+						insert nulls to for that gap time;
+						append the extracted 6 signals data to the main dataframe;
+					else:
+						append the extracted 6 signals data to the main dataframe;
+				
+					if the sampling frequency is per second,then:
+						convert the data into per minute by taking average for per 60 seconds data;
+					else when the sampling frequency is per minute,then:
+						do nothing;
+					
+		
+	
+	When all the recordings i.e. __n files have been checked and the 6 signals data has been extracted fo the following:
+		
+
+	if last recording ended sometime  before the ICU outtime, then:
+		insert nulls between the record end time and ICU outtime at the end ;
+	else:
+		do nothing;
+	
+			
+			
+			
+		
