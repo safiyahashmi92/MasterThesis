@@ -1,0 +1,50 @@
+---------------------for Suspected infection + 1,2,3,4------------------------
+Number of patients with recording for Suspected infection + 1 hour :  539
+Number of patients with recording for Suspected infection + 2 hours :  582
+Number of patients with recording for Suspected infection + 3 hours :  649
+Number of patients with recording for Suspected infection + 4 hours :  700
+---------------------for ICU outtime - 1,2,3,4-------------------------------
+Number of patients with recording for ICU outtime - 1 hour :  1064
+Number of patients with recording for ICU outtime - 2 hours :  1162
+Number of patients with recording for ICU outtime - 3 hours :  1238
+Number of patients with recording for ICU outtime - 4 hours :  1276
+---------------------------for Sepsis onset time + 1,2,3,4----------------------------
+Number of patients with recording for Sepsis onset time + 1 hour :  594
+Number of patients with recording for Sepsis onset time + 2 hours :  660
+Number of patients with recording for Sepsis onset time + 3 hours :  695
+Number of patients with recording for Sepsis onset time + 4 hours :  739
+---------------------for Sepsis onset time - 1,2,3,4------------------------
+Number of patients with recording for Sepsis onset time - 1 hour :  308
+Number of patients with recording for Sepsis onset time - 2 hours :  309
+Number of patients with recording for Sepsis onset time - 3 hours :  311
+Number of patients with recording for Sepsis onset time - 4 hours :  311
+--------------------for Septic shock onset time + 1,2,3,4-------------------------
+Number of patients with recording for Septic shock onset time + 1 hour :  355
+Number of patients with recording for Septic shock onset time + 2 hours :  370
+Number of patients with recording for Septic shock onset time + 3 hours :  375
+Number of patients with recording for Septic shock onset time + 4 hours :  379
+---------------------for Septic shock onset time - 1,2,3,4----------------------------
+Number of patients with recording for Septic shock onset time - 1 hour :  345
+Number of patients with recording for Septic shock onset time - 2 hours :  350
+Number of patients with recording for Septic shock onset time - 3 hours :  356
+Number of patients with recording for Septic shock onset time - 4 hours :  364
+----------------------suspected infection + 1,2,3,4 AND ICU out time - 1,2,3,4--------------
+Number of patients with recording for Suspected infection + 1, Out - 1 :  344
+Number of patients with recording for Suspected infection + 2, Out - 2 :  407
+Number of patients with recording for Suspected infection + 3, Out - 3 :  482
+Number of patients with recording for Suspected infection + 4, Out - 4 :  541
+-------suspected infection + 1,2,3,4 AND Sepsis onset time - 1,2,3,4 - to predict sepsis------------
+Number of patients with recording for Suspected infection + 1, Sepsis onset time - 1 :  217
+Number of patients with recording for Suspected infection + 2, Sepsis onset time - 2 :  227
+Number of patients with recording for Suspected infection + 3, Sepsis onset time - 3 :  245
+Number of patients with recording for Suspected infection + 4, Sepsis onset time - 4 :  259
+---------suspected infection + 1,2,3,4 AND Sepsis onset time - 1,2,3,4  AND sepsis onset time + 1,2,3,4 AND Septic shock -1,2,3,4 - to predict septic shock right from suspected infection------
+Number of patients with recording for Suspected infection + 1, Sepsis onset time - 1, sepsis onset time + 1, Septic shock - 1 :  39
+Number of patients with recording for Suspected infection + 2, Sepsis onset time - 2, sepsis onset time + 2, Septic shock - 2 :  41
+Number of patients with recording for Suspected infection + 3, Sepsis onset time - 3, sepsis onset time + 3, Septic shock - 3 :  48
+Number of patients with recording for Suspected infection + 4, Sepsis onset time - 4, sepsis onset time + 4, Septic shock - 4 :  53
+---------sepsis onset time + 1,2,3,4 AND Septic shock -1,2,3,4 AND Septic shock + 1,2,3,4 - to check around sepsis and septic shock-------------------
+Number of patients with recording for sepsis onset time + 1, Septic shock - 1, Septic shock + 1 :  152
+Number of patients with recording for sepsis onset time + 2, Septic shock - 2, Septic shock + 2 :  176
+Number of patients with recording for sepsis onset time + 3, Septic shock - 3, Septic shock + 3 :  200
+Number of patients with recording for sepsis onset time + 4, Septic shock - 4, Septic shock + 4 :  228
